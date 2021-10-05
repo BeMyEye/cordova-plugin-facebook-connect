@@ -1,12 +1,12 @@
 # cordova-plugin-facebook-connect
 
-This is a fork from [jeduan/cordova-plugin-facebook4](https://github.com/jeduan/cordova-plugin-facebook4), where I excluded the `com.google.zxing` package (that is used by facebook sdk for qr scaning) that is causing the issue ["Multiple dex files define Lcom/google/zxing/BarcodeFormat"](https://github.com/phonegap/phonegap-plugin-barcodescanner/issues/535)
+This is a fork from [cordova-plugin-facebook-connect/cordova-plugin-facebook-connect/](https://github.com/cordova-plugin-facebook-connect/cordova-plugin-facebook-connect), where we excluded the `com.google.zxing` package (that is used by facebook sdk for qr scaning) that is causing the issue ["Multiple dex files define Lcom/google/zxing/BarcodeFormat"](https://github.com/phonegap/phonegap-plugin-barcodescanner/issues/535)
 
 > Use Facebook SDK in Cordova projects
 
 ## Table of contents
 
-- [Update the plugin with jeduan/cordova-plugin-facebook4](#update)
+- [Update the plugin with cordova-plugin-facebook-connect/cordova-plugin-facebook-connect](#update)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Sample repo](#sample-repo)
@@ -14,9 +14,9 @@ This is a fork from [jeduan/cordova-plugin-facebook4](https://github.com/jeduan/
 - [Facebook SDK](#facebook-sdk)
 - [API](#api)
 
-## Update the plugin with jeduan/cordova-plugin-facebook4
+## Update the plugin with cordova-plugin-facebook-connect/cordova-plugin-facebook-connect
 
-- For iOS, merge jeduan/cordova-plugin-facebook4, they will use updated iOS SDK
+- For iOS, merge cordova-plugin-facebook-connect/cordova-plugin-facebook-connect, they will use updated iOS SDK
 - For Android, update facebook-android-sdk version in build.gradle. We use a build.gradle file to be able to exclude com.google.zxing.
 
 ## Installation
