@@ -1,6 +1,6 @@
 # Troubleshooting
 
-Can't solve your issue here? Check the [existing issues](https://github.com/Wizcorp/phonegap-facebook-plugin/issues) on Github. If you still cannot find a solution please [create and issue after reading the contributing guide](../CONTRIBUTING.md). 
+Can't solve your issue here? Check the [existing issues](https://github.com/cordova-plugin-facebook-connect/cordova-plugin-facebook-connect/issues) on Github. If you still cannot find a solution please [create and issue after reading the contributing guide](../CONTRIBUTING.md). 
 
 When creating a Github issue **remember to**:
 
@@ -10,10 +10,8 @@ When creating a Github issue **remember to**:
 
 ### Troubleshooting contents
 - [**General**](#general)
-	- [How do I Build without Eclipse?](#how-do-i-build-without-eclipse)
 	- [How do I Add a Like Button?](#how-do-i-add-a-like-button)
 	- [Where is the init API?](#where-is-the-init-api)
-	- [How to install with NPM PhoneGap?](#how-to-install-with-npm-phonegap)
 
 - [**Android**](#android)
 	- [No Reply From Login?](#no-reply-from-login)
@@ -28,11 +26,6 @@ When creating a Github issue **remember to**:
     - [Login fails with devices running iOS 10+](#login-fails-with-devices-running-ios-10)
 
 ## General
-### How do I Build without Eclipse?
-
-- Solution
-    - Check the [Android Guide](https://github.com/Wizcorp/phonegap-facebook-plugin/blob/master/platforms/android/README.md)
-
 ### How do I Add a Like Button?
 
 - Problem
@@ -59,25 +52,7 @@ The better way to understand this little "workflow" is to manipulate the Graph A
     - I was using `FB.init()` and now it's not working.
 
 - Solution
-    - You are using an out-dated API. Please check the [new API with sample code](https://github.com/Wizcorp/phonegap-facebook-plugin/blob/master/README.md) and sample projects in `platforms/ios` and `platforms/android`.
-
-### How to install with NPM PhoneGap?
-
-- Problem
-    - I'm trying to install via https the Facebook plugin in iOS, but when I try the following line:
-
-`sudo phonegap local plugin add https://github.com/phonegap/phonegap-facebook-plugin.git --variable APP_ID="12345678910" --variable APP_NAME="MyAPP"`
-
-Im getting the message "[error] Variable(s) missing: APP_ID, APP_NAME"
-
-- Solution
-    - The `PhoneGap` CLI and `Cordova` CLI differ slightly you will need to run:
-
-`git clone https://github.com/Wizcorp/phonegap-facebook-plugin`
-
-`cd to/your/project`
-
-`phonegap local plugin add /path/to/here/phonegap-facebook-plugin --variable APP_ID="12345678910" --variable APP_NAME="AwesomeApp"`
+    - You are using an out-dated API. Please check the [new API with sample code](https://github.com/cordova-plugin-facebook-connect/cordova-plugin-facebook-connect/blob/master/README.md) and sample projects in `platforms/ios` and `platforms/android`.
 
 ## Android
 ### No Reply From Login?
@@ -123,19 +98,6 @@ try {
     - Use one of these versions when creating your hash: **openssl-0.9.8e_X64.zip** or **openssl-0.9.8d_X64.rar**
 
 You should **not** use the openssl-0.9.8k_X64.zip.
-
-### Jar mismatch! Fix your dependencies
-
-- Problem
-    - I get this error:
-
-```
-BUILD FAILED
-/usr/local/opt/android-sdk/tools/ant/build.xml:577: Jar mismatch! Fix your dependencies
-```
-
-- Solution
-    - You may have duplicate android-support-v4.jar files. Remove android-support-v4.jar from the `/libs` folder of your project.
 
 ### Open Fullscreen Dialog in Landscape Orientation
 - Problem:
